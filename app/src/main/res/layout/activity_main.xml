@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    /**
+    Linearlayout 线性布局开始声明  linear线性 layout布局
+    id 为这组资源设置一个ID，在java文件中可以用findviewbyid(id)找到该组件
+    layout_width 布局的宽度
+        wrao_content(组件实际大小) 直接按比例
+        fill_parent或者match_parent 填满父容器
+        二者区别：
+        fill 填充，parent 父母亲，match 匹配
+    layout_height 布局的高度 同上
+
+    orientation 声明组件的排列方式  orientation取向 horizontal 水平，verticel默认竖直
+    background 背景色
+    layout_gravity 父容器的对齐方式
+    gravity 控制组件包含的子元素的对齐方式可多个组合
+
+    */
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#ADFF2F"
+        android:layout_weight="2"
+        />
+    /**
+     layout_weight 权重 等比划分，分谁谁为0
+
+    */
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#DA70D6"
+        />
+</LinearLayout>
